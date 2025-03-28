@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// ElbowsUp brand colors
+				elbows: {
+					blue: '#1A50A3',
+					lightblue: '#3A81E3',
+					red: '#E63946',
+					light: '#F1FAEE',
+					dark: '#1D3557'
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': 'linear-gradient(to bottom, rgba(26, 80, 163, 0.8), rgba(29, 53, 87, 0.9))',
+				'canada-gradient': 'linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(26, 80, 163, 0.1) 100%)'
 			}
 		}
 	},
